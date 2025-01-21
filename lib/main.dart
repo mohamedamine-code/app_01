@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 
@@ -25,6 +25,7 @@ class testttttt extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 10,
         title: Text(
           "Facebook",
           style:
@@ -48,23 +49,34 @@ class testttttt extends StatelessWidget {
           IconButton(onPressed: () {}, icon: Icon(Icons.search, size: 30)),
         ],
       ),
-            body:Text(
-              "The oldest classical British and Latin writings had little or no space between words and could be written in boustrophedon (alternating directions). Over time, text direction (left to right) became standardized. Word dividers and terminal punctuation became common. The first way to divide sentences into groups was the original paragraphos, similar to an underscore at the beginning of the new group.[1] The Greek parágraphos evolved into the pilcrow (¶), which in English manuscripts in the Middle Ages can be seen inserted inline between sentences.🔥😛☀️✨",
+            body:Container(
+              child:Text(
+              "The oldest classical British and Latin writings had little or no space between words and could be written in boustrophedon (alternating directions). The first way to divide sentences into groups was the original paragraphos. 🔥😛☀️✨",
               style: TextStyle( 
-              
               fontSize: 30,
               //decoration: TextDecoration.underline,
-              backgroundColor: Color.fromARGB(25, 2, 2, 250),
-              fontStyle: FontStyle.italic,
-              fontWeight: FontWeight.bold,
-              height: 2.1,
-              letterSpacing: 6,
-              wordSpacing: 20,
+              fontStyle: FontStyle.normal,
+              fontWeight: FontWeight.w500,
+              height: 1.5,
+              letterSpacing: 3,
+              wordSpacing: 2,
               ),
-              maxLines:2,
-              overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.left,
-              ),
+            ),
+            color: Color.fromARGB(255, 233, 222, 15),
+
+            //margin: EdgeInsets.fromLTRB(15,10, 15, 5),
+
+            //margin: EdgeInsets.symmetric(vertical: 20,horizontal: 30),
+
+            margin: EdgeInsets.all(50.0),
+            padding: EdgeInsets.all(10),
+
+            height: 2150,
+            width: 350,
+
+
+          ),
               
               
 
