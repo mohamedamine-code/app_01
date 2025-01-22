@@ -51,7 +51,7 @@ class testttttt extends StatelessWidget {
       ),
             body:Container(
               child:Text(
-              "The oldest classical British and Latin writings had little or no space between words and could be written in boustrophedon (alternating directions). The first way to divide sentences into groups was the original paragraphos. 🔥😛☀️✨",
+              "The oldest",
               style: TextStyle( 
               fontSize: 30,
               //decoration: TextDecoration.underline,
@@ -61,27 +61,27 @@ class testttttt extends StatelessWidget {
               letterSpacing: 3,
               wordSpacing: 2,
               ),
-              textAlign: TextAlign.left,
             ),
-            color: Color.fromARGB(255, 233, 222, 15),
-
-            //margin: EdgeInsets.fromLTRB(15,10, 15, 5),
-
-            //margin: EdgeInsets.symmetric(vertical: 20,horizontal: 30),
-
-            margin: EdgeInsets.all(50.0),
+            //color: Color.fromARGB(255, 233, 222, 15),
+            margin: EdgeInsets.all(10.0),
             padding: EdgeInsets.all(10),
-
-            height: 2150,
+            height: 250,
             width: 350,
-
-
-          ),
+            alignment: Alignment.center,
+            transform: Matrix4.rotationZ(0.00),
+            decoration: BoxDecoration(
+              color: Color.fromARGB(255, 62, 202, 237),
+              border:Border.all(
+                color:Color.fromARGB(255, 9, 3, 58),
+                width: 5.5,
+                ),
+              //borderRadius: BorderRadius.all(Radius.circular(10)),
+              //borderRadius:BorderRadius.circular(50),
+              shape:BoxShape.circle,
+              ),
               
-              
-
-
-      floatingActionButton: FloatingActionButton(
+            ),
+                  floatingActionButton: FloatingActionButton(
         onPressed: () {
           print("button has prssed");
         },
@@ -90,3 +90,6 @@ class testttttt extends StatelessWidget {
     );
   }
 }
+
+
+
