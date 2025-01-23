@@ -13,83 +13,75 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      home: testttttt(),
+      home: test(),
     );
   }
 }
 
-class testttttt extends StatelessWidget {
-  const testttttt({super.key});
+class test extends StatelessWidget {
+  const test({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 10,
         title: Text(
           "Facebook",
-          style:
-              TextStyle(fontSize: 28, color: Color.fromARGB(255, 5, 45, 244)),
+          style: TextStyle(
+            fontSize: 33,
+            color: Color.fromARGB(255, 4, 66, 236),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
         leading: IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.facebook,
-              size: 40,
-              color: Color.fromARGB(255, 35, 7, 242),
-            )),
+          onPressed: () {},
+          icon: Icon(Icons.facebook),
+          iconSize: 44,
+          color: Color.fromARGB(255, 4, 66, 236),
+        ),
+        elevation: 5.5,
         actions: [
           IconButton(
               onPressed: () {},
               icon: Icon(
-                Icons.list_rounded,
-                size: 30,
+                Icons.search_rounded,
+                size: 33,
               )),
-          IconButton(onPressed: () {}, icon: Icon(Icons.search, size: 30)),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.list,
+              size: 33,
+            ),
+          ),
         ],
       ),
-            body:Container(
-              child:Text(
-              "The oldest",
-              style: TextStyle( 
-              fontSize: 30,
-              //decoration: TextDecoration.underline,
-              fontStyle: FontStyle.normal,
-              fontWeight: FontWeight.w500,
-              height: 1.5,
-              letterSpacing: 3,
-              wordSpacing: 2,
-              ),
-            ),
-            //color: Color.fromARGB(255, 233, 222, 15),
-            margin: EdgeInsets.all(10.0),
-            padding: EdgeInsets.all(10),
-            height: 250,
-            width: 350,
-            alignment: Alignment.center,
-            transform: Matrix4.rotationZ(0.00),
-            decoration: BoxDecoration(
-              color: Color.fromARGB(255, 62, 202, 237),
-              border:Border.all(
-                color:Color.fromARGB(255, 9, 3, 58),
-                width: 5.5,
-                ),
-              //borderRadius: BorderRadius.all(Radius.circular(10)),
-              //borderRadius:BorderRadius.circular(50),
-              shape:BoxShape.circle,
-              ),
-              
-            ),
-                  floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          print("button has prssed");
-        },
-        child: Icon(Icons.add),
+      body: Container(
+        child: Text(
+          "Hello Sir !😎",
+          style: TextStyle(
+            fontSize: 33,
+            fontWeight: FontWeight.w500,
+            decoration: TextDecoration.underline,
+            color: Color.fromARGB(255, 6, 6, 2),
+            letterSpacing: 2,
+          ),
+        ),
+        margin: EdgeInsets.all(40),
+        alignment: Alignment.center,
+        height: 300,
+        width: 500,
+        //color: Colors.amber,
+        decoration: BoxDecoration(
+          border:Border.all(
+            color: Color.fromARGB(149, 3, 92, 3),
+            width: 12,
+          ),
+          shape:BoxShape.circle,
+          color: const Color.fromARGB(136, 3, 99, 177),
+        ),
       ),
     );
   }
 }
-
-
-
